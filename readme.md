@@ -12,34 +12,39 @@ Review course materials, specifically:
 
 ##### On data semantics (when to use value versus pointer semantics)
 
-Don't mix value and pointer semantics in a function
+Don't mix value and pointer semantics in a function.
 
-Built-in types
-Pass built-in types using value semantics
-	Exception: we want nils, only then is it okay to use pointer semantics. Comment these instances
+######Built-in types
+Pass built-in types using value semantics.
+**Exception**: if we want nils - only then is it okay to use pointer semantics. Comment these instances
 
-Value semantics safest way to do mutation
+Value semantics is the safest way to do mutation.
 
-Reference types - arrays, slices, maps, interfaces, functions
-Use value semantics to pass these around
-	Exception: unless you're writing to it
+######Reference types - arrays, slices, maps, interfaces, functions
+Use value semantics to pass these around. **Exception**: unless you're writing to it.
 
 ##### Other 
 
-Method receivers can be value or pointer - can call these in either way.
+* Method receivers can be value or pointer - can call these in either way.
 
-Use functions until it's not practical anymore, then use methods on a struct
+* Use functions until it's not practical anymore, then use methods on a struct.
 
-Methods allow data to exhibit behaviour
+* Methods allow _data_ to exhibit behaviour.
 
-Use var to always get a zero value
-var u User 
-vs
-u:=User() may or may not give you a zero value
+* Use var to always get a zero value, e.g.
+```
+var u User
+```
+is better than the code below, which may or may not give you a zero value. Using `var` always will.
+```
+u := User()
+``` 
 
-go routines - fan out pattern vs pooling
+* go routines - fan out pattern vs pooling pattern, be aware of how these differ.
 
 ## Finding Dependable Go Packages
+
+Three stages:
 
 ### Discovery 
 * Ask Twitter 
@@ -70,10 +75,10 @@ The Go team is working on a site for discovering and evaluating packages.
 * [GraphViz](http://graphviz.org/)
 
 ## Refactor Considerations
-* get it working
+* get it working first
 * refactor, make interfaces where appropriate
 * profile
-* readability according to 4+-1 items working memory idea, things need to be in chunks
+* readability according to 4±1 items working memory idea, things need to be in chunks
 
 ## Links
 
