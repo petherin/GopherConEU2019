@@ -14,13 +14,15 @@ Review course materials, specifically:
 
 Don't mix value and pointer semantics in a function.
 
-######Built-in types
+###### Built-in types
+
 Pass built-in types using value semantics.
 **Exception**: if we want nils - only then is it okay to use pointer semantics. Comment these instances
 
 Value semantics is the safest way to do mutation.
 
-######Reference types - arrays, slices, maps, interfaces, functions
+###### Reference types - arrays, slices, maps, interfaces, functions
+
 Use value semantics to pass these around. **Exception**: unless you're writing to it.
 
 ##### Other 
@@ -51,14 +53,14 @@ Three stages:
 * Google
 * Github
 
-###Evaluate 
+### Evaluate 
 1. License
 2. Popularity - Stats on github - is it forked, depended on a lot, contributed to recently? 
 3. Code quality - is documentation comprehensive, good tests, is it clear idiomatic Go code?
 4. Upkeep - are the contributors well regarded, active? Do issues get responded to?
 5. Indirect dependencies - check the package's packages!
 
-###Maintenance 
+### Maintenance 
 * Stay up to date with packages
 * Maybe contribute to them
 
@@ -70,6 +72,7 @@ The Go team is working on a site for discovering and evaluating packages.
 ![Distributed Tracing Example Diagram](distributed_tracing.jpg "Distributed Tracing Example Diagram")
 
 ## [How I write Go HTTP services after seven years](https://medium.com/statuscode/how-i-write-go-http-services-after-seven-years-37c208122831)
+Basis for [Mat Ryer's](https://twitter.com/matryer) talk.
 
 ## Tools
 * [GraphViz](http://graphviz.org/)
@@ -96,8 +99,8 @@ Learn
 * CSS
 
 Links
-* [Spectre Bug](https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)
 * [Binary Tree](https://appliedgo.net/bintree/)
+* [Spectre Bug](https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)/) - it broke caches in Intel processors
 * [Hacker News](https://thehackernews.com/)
 
 ### JavaScript Recommendation
