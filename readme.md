@@ -1,33 +1,32 @@
 # GopherCon EU2019 Notes
 
-## [Ultimate Go](https://github.com/ardanlabs/gotraining/blob/master/topics/courses/go/README.md) Workshop Takeaways
+## Go Concepts
 
-Review course materials, specifically:
- 
 * [Profiling](https://github.com/ardanlabs/gotraining/blob/master/topics/courses/go/tooling/README.md)
 * [Data Semantics](https://github.com/ardanlabs/gotraining/blob/67e33a36da51d394b0fe6f925b8023e10a29878d/topics/go/language/methods/example5/example5.go)
 * [Concurrency](https://github.com/ardanlabs/gotraining/blob/master/topics/courses/go/concurrency/README.md)
 * [Mechanics and design behind pointers, stacks, heaps, escape analysis and value/pointer semantics](https://www.ardanlabs.com/blog/2017/05/language-mechanics-on-stacks-and-pointers.html)
 * Tracing [here](https://github.com/ardanlabs/gotraining/blob/master/topics/go/profiling/trace/README.md) and [here](https://making.pusher.com/go-tool-trace/).
+* [Go Concurrency Patterns](https://blog.golang.org/pipelines)
 
-### Guidelines
+## [Ultimate Go](https://github.com/ardanlabs/gotraining/blob/master/topics/courses/go/README.md) Workshop Takeaways
 
-#### On data semantics (when to use value versus pointer semantics)
+### On data semantics (when to use value versus pointer semantics)
 
 Don't mix value and pointer semantics in a function.
 
-##### Built-in types
+#### Built-in types
 
 Pass built-in types using value semantics.
 **Exception**: if we want nils - only then is it okay to use pointer semantics. Comment these instances
 
 Value semantics is the safest way to do mutation.
 
-##### Reference types - arrays, slices, maps, interfaces, functions
+#### Reference types - arrays, slices, maps, interfaces, functions
 
 Use value semantics to pass these around. **Exception**: unless you're writing to it.
 
-#### Other 
+### Other 
 
 * Method receivers can be value or pointer - can call these in either way.
 
