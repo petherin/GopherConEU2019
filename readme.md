@@ -8,6 +8,7 @@ Review course materials, specifically:
 * [Data Semantics](https://github.com/ardanlabs/gotraining/blob/67e33a36da51d394b0fe6f925b8023e10a29878d/topics/go/language/methods/example5/example5.go)
 * [Concurrency](https://github.com/ardanlabs/gotraining/blob/master/topics/courses/go/concurrency/README.md)
 * [Mechanics and design behind pointers, stacks, heaps, escape analysis and value/pointer semantics](https://www.ardanlabs.com/blog/2017/05/language-mechanics-on-stacks-and-pointers.html)
+* Tracing [here](https://github.com/ardanlabs/gotraining/blob/master/topics/go/profiling/trace/README.md) and [here](https://making.pusher.com/go-tool-trace/).
 
 ### Guidelines
 
