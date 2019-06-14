@@ -7,6 +7,7 @@ Review course materials, specifically:
 * [Profiling](https://github.com/ardanlabs/gotraining/blob/master/topics/courses/go/tooling/README.md)
 * [Data Semantics](https://github.com/ardanlabs/gotraining/blob/67e33a36da51d394b0fe6f925b8023e10a29878d/topics/go/language/methods/example5/example5.go)
 * [Concurrency](https://github.com/ardanlabs/gotraining/blob/master/topics/courses/go/concurrency/README.md)
+* [More on Data Semantics and Escape Analysis](https://www.ardanlabs.com/blog/2017/05/language-mechanics-on-stacks-and-pointers.html)
 
 ### Guidelines
 
