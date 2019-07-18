@@ -71,7 +71,7 @@ There are three stages:
 
 ### Evaluate 
 1. License
-2. Popularity - Stats on github - is it forked, depended on a lot, contributed to recently? 
+2. Popularity - Stats on github - is it forked, depended on a lot, contributed to recently? [Astronomer](https://github.com/Ullaakut/astronomer) checks how trustworthy a repo's stars are
 3. Code quality - is documentation comprehensive, good tests, is it clear idiomatic Go code?
 4. Upkeep - are the contributors well regarded, active? Do issues get responded to?
 5. Indirect dependencies - check the package's packages!
